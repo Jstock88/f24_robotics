@@ -1,0 +1,1986 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/road/protos/Road.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/GalvanizedMetal.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Grass.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/road/protos/RoadIntersection.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/traffic/protos/StopSign.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/road/protos/CurvedRoadSegment.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/apartment_structure/protos/Wall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Pavement.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/RedBricks.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/buildings/protos/Museum.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/buildings/protos/Auditorium.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/buildings/protos/SmallManor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/buildings/protos/HollowBuilding.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/buildings/protos/ModernSuburbanHouse.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/trees/protos/SimpleTree.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/buildings/protos/ComposedHouse.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Asphalt.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/traffic/protos/ControlledStreetLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/traffic/protos/CrossRoadsTrafficLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/traffic/protos/PedestrianCrossing.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/buildings/protos/SmallResidentialBuilding.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Marble.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/FormedConcrete.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/buildings/protos/SimpleBuilding.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/street_furniture/protos/Bench.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/street_furniture/protos/Fountain.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/buildings/protos/RandomBuilding.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/buildings/protos/HouseWithGarage.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.20108435566547248 0.569478507305926 0.7970315625012703 0.834357158227771
+  position -806.0775666308613 -767.5052766076257 477.24182625195846
+}
+TexturedBackground {
+}
+DEF Bryce_Lane Group {
+  children [
+    HouseWithGarage {
+      translation 145.39 -389.04 0
+      rotation 0 0 1 -1.5707953071795862
+      name "house with garage(2)"
+    }
+    HouseWithGarage {
+      translation 286 -389.04 0
+      rotation 0 0 1 -1.5707953071795862
+      name "house with garage(1)"
+    }
+    HouseWithGarage {
+      translation 214.93 -389.04 0
+      rotation 0 0 1 -1.5707953071795862
+    }
+    Solid {
+      translation 107.97 -321.04 0.1
+      children [
+        Shape {
+          appearance Asphalt {
+          }
+          geometry Box {
+            size 100 50 0.1
+          }
+        }
+      ]
+      name "solid(57)"
+    }
+    Solid {
+      translation 198.18 -255.89 0.1
+      children [
+        Shape {
+          appearance Asphalt {
+          }
+          geometry Box {
+            size 100 20 0.1
+          }
+        }
+      ]
+      name "solid(56)"
+    }
+    RectangleArena {
+      translation 248.224 313.488 0.2
+      rotation 0 0 1 1.8326
+      name "rectangle arena(2)"
+      floorSize 59 40
+      floorAppearance Grass {
+      }
+      wallHeight 3
+    }
+    DEF Parking_Lot Solid {
+      translation -139.976 219.276 0.1
+      rotation 0 0 1 -1.3089953071795861
+      children [
+        Shape {
+          appearance Asphalt {
+          }
+          geometry Box {
+            size 180 80 0.1
+          }
+        }
+      ]
+      name "solid(32)"
+    }
+    RandomBuilding {
+      translation -341.93 -357.64 0
+      rotation 0 0 1 0.261799
+      name "building(6)"
+    }
+    RectangleArena {
+      translation 237.277 222.366 0.2
+      rotation 0 0 1 0.261799
+      name "rectangle arena(1)"
+      floorSize 100 50
+      floorAppearance Grass {
+      }
+      wallHeight 3
+    }
+    RectangleArena {
+      translation 141.044 79.3824 0.06
+      rotation 0 0 1 0.261799
+      name "rectangle arena(3)"
+      floorSize 200 100
+      floorAppearance Grass {
+        type "artificial"
+      }
+      wallHeight 0
+      wallAppearance Grass {
+        type "artificial"
+      }
+    }
+    DEF Parking_Lot Solid {
+      translation 347.839 200.752 0.1
+      rotation 0 0 1 -2.8797953071795863
+      children [
+        Shape {
+          appearance Asphalt {
+          }
+          geometry Box {
+            size 70 150 0.5
+          }
+        }
+      ]
+      name "solid(15)"
+    }
+    DEF Parking_Lot Solid {
+      translation 158.005 321.919 0.1
+      rotation 0 0 1 -2.8797953071795863
+      children [
+        Shape {
+          appearance Asphalt {
+          }
+          geometry Box {
+            size 70 150 0.5
+          }
+        }
+      ]
+      name "solid(14)"
+    }
+    StopSign {
+      translation -286.4 343.84 0
+      rotation 0 0 1 -1.5708053071795867
+      name "stop sign(3)"
+    }
+    StopSign {
+      translation -293.777 -119.394 0
+      rotation 0 0 1 1.57079
+      name "stop sign(3)"
+    }
+    StopSign {
+      translation -285.76 -119.9 0
+      rotation 0 0 1 -5.307179586466759e-06
+      name "stop sign(3)"
+    }
+    StopSign {
+      translation -285.797 -128.324 0
+      rotation 0 0 1 -1.5708053071795867
+      name "stop sign(3)"
+    }
+    StopSign {
+      translation -286.24 40.78 0
+      rotation 0 0 1 -5.307179586466759e-06
+      name "stop sign(3)"
+    }
+    StopSign {
+      translation -171.07 125.99 0
+      rotation 0 0 1 3.14159
+      name "stop sign(3)"
+    }
+    HollowBuilding {
+      translation -216.78 243.43 0
+      rotation 0 0 1 -0.523595307179586
+      name "hollow building(5)"
+    }
+    StopSign {
+      translation 57.44 -346.99 0
+      name "stop sign(3)"
+    }
+    Group {
+      children [
+        Solid {
+          translation -265.21 284.61 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(69)"
+        }
+        Solid {
+          translation -363.02 384.01 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(68)"
+        }
+        Solid {
+          translation -363.02 284.61 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(67)"
+        }
+        Solid {
+          translation -335.66 164.78 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(66)"
+        }
+        Solid {
+          translation -303.3 213.31 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(65)"
+        }
+        Solid {
+          translation -355.16 -2.02 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(64)"
+        }
+        Solid {
+          translation -363.02 103.59 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(63)"
+        }
+        Solid {
+          translation -333.64 34.59 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(62)"
+        }
+        Solid {
+          translation -363.02 -52.58 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(61)"
+        }
+        Solid {
+          translation -331.35 -163.31 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(60)"
+        }
+        Solid {
+          translation -324.45 -96.87 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(59)"
+        }
+        Solid {
+          translation -363.02 -197.88 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(58)"
+        }
+        Solid {
+          translation 265.54 -189.83 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(55)"
+        }
+        Solid {
+          translation 287.73 63.07 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(54)"
+        }
+        Solid {
+          translation 287.73 5.62 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(53)"
+        }
+        Solid {
+          translation 253.24 -70.39 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(52)"
+        }
+        Solid {
+          translation 347.44 -23.18 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(51)"
+        }
+        Solid {
+          translation 188.13 -126.8 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(50)"
+        }
+        Solid {
+          translation -114.06 -318.28 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(49)"
+        }
+        Solid {
+          translation -260.72 -256.63 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(48)"
+        }
+        Solid {
+          translation -320.29 -243.75 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(47)"
+        }
+        Solid {
+          translation -114.06 -243.75 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(46)"
+        }
+        Solid {
+          translation -108.6 -160.62 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(45)"
+        }
+        Solid {
+          translation -130.36 -80.24 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(44)"
+        }
+        Solid {
+          translation -84.17 56.96 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(43)"
+        }
+        Solid {
+          translation -150.42 55.1 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(42)"
+        }
+        Solid {
+          translation -137.04 90.09 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(41)"
+        }
+        Solid {
+          translation -49.2 90.09 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(39)"
+        }
+        Solid {
+          translation 188.13 5.62 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(40)"
+        }
+        Solid {
+          translation -206.32 -66.61 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(38)"
+        }
+        Solid {
+          translation -34.3 -42.37 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(37)"
+        }
+        Solid {
+          translation 11.63 103.99 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(36)"
+        }
+        Solid {
+          translation -88.2 0 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(35)"
+        }
+        Solid {
+          translation -34.3 5.62 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(34)"
+        }
+        Solid {
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(33)"
+        }
+        Fountain {
+          translation -335.98 -289.62 0
+          name "fountain(1)"
+          radius 5
+        }
+        Fountain {
+          translation -232.14 -61.05 0
+          radius 5
+        }
+        Solid {
+          translation -257.31 -282.31 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(31)"
+        }
+        Solid {
+          translation -193.07 -259.62 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(30)"
+        }
+        Solid {
+          translation -231.23 -362.98 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(29)"
+        }
+        Solid {
+          translation -201.66 -282.31 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(28)"
+        }
+        Solid {
+          translation -138.17 -282.31 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(27)"
+        }
+        Solid {
+          translation -108.55 -282.31 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(26)"
+        }
+        Solid {
+          translation -80.65 -344.1 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(25)"
+        }
+        Solid {
+          translation -13.72 -282.31 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(24)"
+        }
+        Solid {
+          translation -55.61 -282.31 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(23)"
+        }
+        Solid {
+          translation -31.7 -368.42 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(22)"
+        }
+        Solid {
+          translation 42.52 -315.09 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(11)"
+        }
+        Solid {
+          translation -14.78 -335.98 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(10)"
+        }
+        Solid {
+          translation 78.74 -192.2 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(9)"
+        }
+        Solid {
+          translation 78.74 -261.93 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(8)"
+        }
+        Solid {
+          translation 28.79 -261.93 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(7)"
+        }
+        Solid {
+          translation 36.11 -5.25 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(6)"
+        }
+        Solid {
+          translation 7.43 -30.11 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(5)"
+        }
+        Solid {
+          translation -45.47 -102.89 0
+          children [
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+          name "solid(4)"
+        }
+      ]
+    }
+    Auditorium {
+      translation -245.06 -161.45 0
+      rotation 0 0 1 1.5708
+      name "auditorium(1)"
+    }
+    DEF Parking_Lot Solid {
+      translation -7.16996 161.315 0.1
+      rotation 0 0 1 -1.3089953071795861
+      children [
+        Shape {
+          appearance Asphalt {
+          }
+          geometry Box {
+            size 72 30 0.1
+          }
+        }
+      ]
+      name "solid(3)"
+    }
+    Solid {
+      translation 217.54 -370.37 0.1
+      children [
+        Shape {
+          appearance Asphalt {
+          }
+          geometry Box {
+            size 250 20 0.1
+          }
+        }
+      ]
+      name "solid(2)"
+    }
+    ComposedHouse {
+      translation 323.16 -385.17 0
+      rotation 0 0 1 -1.5707953071795862
+      name "composed house(3)"
+    }
+    ComposedHouse {
+      translation 249.46 -385.17 0
+      rotation 0 0 1 -1.5707953071795862
+      name "composed house(2)"
+    }
+    ComposedHouse {
+      translation 176.77 -385.17 0
+      rotation 0 0 1 -1.5707953071795862
+      name "composed house(1)"
+    }
+    ComposedHouse {
+      translation 107.48 -385.17 0
+      rotation 0 0 1 -1.5707953071795862
+    }
+    Solid {
+      translation 160.94 -182.98 0
+      children [
+        Group {
+          children [
+            SimpleTree {
+              translation 10 -20 0
+              name "tree(2)"
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+            SimpleTree {
+              translation 0 -30 0
+              name "tree(3)"
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+        }
+        Group {
+          children [
+            SimpleTree {
+              translation 10 3 0
+              name "tree(1)"
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+            SimpleTree {
+              type "oak tree"
+              height 10
+              enableBoundingObject FALSE
+            }
+          ]
+        }
+      ]
+      name "solid(1)"
+    }
+    ModernSuburbanHouse {
+      translation 180.23 -307 0
+      rotation 0 0 1 1.5708
+      name "suburban house(18)"
+    }
+    ModernSuburbanHouse {
+      translation 209.1 -307 0
+      rotation 0 0 1 1.5708
+      name "suburban house(17)"
+    }
+    ModernSuburbanHouse {
+      translation 237.22 -307 0
+      rotation 0 0 1 1.5708
+      name "suburban house(16)"
+    }
+    ModernSuburbanHouse {
+      translation 289.82 -307 0
+      rotation 0 0 1 1.5708
+      name "suburban house(14)"
+    }
+    ModernSuburbanHouse {
+      translation 340 -307 0
+      rotation 0 0 1 1.5708
+      name "suburban house(12)"
+    }
+    ModernSuburbanHouse {
+      translation 390 -307.07 0
+      rotation 0 0 1 1.5708
+      name "suburban house(10)"
+    }
+    ModernSuburbanHouse {
+      translation 390 -273.68 0
+      rotation 0 0 1 -1.5707953071795862
+      name "suburban house(9)"
+    }
+    ModernSuburbanHouse {
+      translation 352.91 -273.68 0
+      rotation 0 0 1 -1.5707953071795862
+      name "suburban house(8)"
+    }
+    ModernSuburbanHouse {
+      translation 289.82 -273.68 0
+      rotation 0 0 1 -1.5707953071795862
+      name "suburban house(5)"
+    }
+    ModernSuburbanHouse {
+      translation 237.22 -273.68 0
+      rotation 0 0 1 -1.5707953071795862
+      name "suburban house(3)"
+    }
+    ModernSuburbanHouse {
+      translation 209.1 -273.68 0
+      rotation 0 0 1 -1.5707953071795862
+      name "suburban house(2)"
+    }
+    ModernSuburbanHouse {
+      translation 180.23 -273.68 0
+      rotation 0 0 1 -1.5707953071795862
+      name "suburban house(1)"
+    }
+    ModernSuburbanHouse {
+      translation 147.373 -272.277 0
+      rotation 0 0 1 0.785399
+    }
+    HollowBuilding {
+      translation -370.78 -255.92 0
+      name "hollow building(4)"
+    }
+    HollowBuilding {
+      translation -370.78 -280.89 0
+      name "hollow building(3)"
+    }
+    HollowBuilding {
+      translation -370.78 -305.57 0
+      name "hollow building(2)"
+    }
+    HollowBuilding {
+      translation -220.45 -20.78 0
+      name "hollow building(1)"
+    }
+    HollowBuilding {
+      translation -245.35 -20.78 0
+    }
+    SmallManor {
+      translation -228.75 74.93 0
+      rotation 0 0 1 -1.5707953071795862
+    }
+    Auditorium {
+      translation -259.29 129.98 0
+    }
+    Museum {
+      translation -184.98 102.77 0
+    }
+    CurvedRoadSegment {
+      translation -229.838 129.994 0.01
+      rotation 0 0 1 -3.1415853071795863
+      name "road(57)"
+      width 3
+      roadBorderWidth [
+        0.3
+      ]
+      rightBorder FALSE
+      curvatureRadius 1
+      totalAngle 3.14
+      locked FALSE
+    }
+    DEF Bryce_Road_22 Road {
+      translation -166.89 132.98 0.01
+      rotation 0 0 1 1.5708
+      name "road(56)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      wayPoints [
+        0 0 0
+        4 0 0
+      ]
+      locked FALSE
+    }
+    DEF Bryce_Road_22 Road {
+      translation -169.88 129.99 0.01
+      rotation 0 0 1 -3.1415853071795863
+      name "road(55)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      wayPoints [
+        0 0 0
+        60 0 0
+      ]
+      locked FALSE
+    }
+    CurvedRoadSegment {
+      translation -166.898 136.974 0.01
+      rotation 0 0 -1 -1.5708053071795867
+      name "road(54)"
+      width 3
+      roadBorderWidth [
+        0.3
+      ]
+      rightBorder FALSE
+      curvatureRadius 1
+      totalAngle 3.14
+      locked FALSE
+    }
+    DEF Bryce_Road_22 Road {
+      translation -166.89 126.98 0.01
+      rotation 0 0 1 1.5708
+      name "road(53)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      leftBorder FALSE
+      wayPoints [
+        0 0 0
+        6 0 0
+      ]
+      locked FALSE
+    }
+    DEF Bryce_Road_10 Road {
+      translation -289.83 196.13 0.01
+      rotation 0 0 1 1.5708
+      name "road(36)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      wayPoints [
+        0 0 0
+        145 0 0
+      ]
+      locked FALSE
+    }
+    DEF Bryce_Road_22 Road {
+      translation -166.89 66.98 0.01
+      rotation 0 0 1 1.5708
+      name "road(31)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      wayPoints [
+        0 0 0
+        60 0 0
+      ]
+      locked FALSE
+    }
+    CurvedRoadSegment {
+      translation -176.89 67.03 0.01
+      rotation 0 0 1 -1.5707953071795862
+      name "road(30)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      locked FALSE
+    }
+    DEF Bryce_Road_22 Road {
+      translation -246.89 57.02 0.01
+      rotation 0 0 -1 -5.307179586466759e-06
+      name "road(29)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      wayPoints [
+        0 0 0
+        70 0 0
+      ]
+      locked FALSE
+    }
+    CurvedRoadSegment {
+      translation -246.89 47.01 0.01
+      rotation 0 0 1 1.5708
+      name "road(28)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      locked FALSE
+    }
+    CurvedRoadSegment {
+      translation -266.89 47.01 0.01
+      rotation 0 0 1 -1.5707953071795862
+      name "road(27)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      locked FALSE
+    }
+    DEF Bryce_Road_22 Road {
+      translation -286.83 37.02 0.01
+      rotation 0 0 -1 -5.307179586466759e-06
+      name "road(26)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      wayPoints [
+        0 0 0
+        20 0 0
+      ]
+      locked FALSE
+    }
+    DEF Bryce_Road_11 Road {
+      translation -289.83 190.02 0.01
+      rotation 0 0 1 1.5708
+      name "road(25)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      wayPoints [
+        0 0 0
+        6.15 0 0
+      ]
+      locked FALSE
+    }
+    DEF Bryce_Road_10 Road {
+      translation -289.83 40.02 0.01
+      rotation 0 0 1 1.5708
+      name "road(24)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      wayPoints [
+        0 0 0
+        150 0 0
+      ]
+      locked FALSE
+    }
+    CurvedRoadSegment {
+      translation -232.001 -60.9086 0.0100001
+      rotation -9.70289e-09 8.40432e-10 -1 2.8
+      name "road(23)"
+      roadBorderWidth [
+        0.3
+      ]
+      leftBorder FALSE
+      totalAngle 0.6
+      locked FALSE
+    }
+    CurvedRoadSegment {
+      translation -231.879 -60.9608 0.01
+      rotation 0 0 1 2.89239
+      name "road(22)"
+      roadBorderWidth [
+        0.3
+      ]
+      totalAngle 5.8
+      locked FALSE
+    }
+    DEF Bryce_Road_22 Road {
+      translation -231.93 -114.06 0.01
+      rotation 0 0 1 1.5708
+      name "road(21)"
+      width 6
+      wayPoints [
+        0 0 0
+        40 0 0
+      ]
+      locked FALSE
+    }
+    CurvedRoadSegment {
+      translation -241.92 -114.02 0.01
+      rotation 0 0 1 -1.5707953071795862
+      name "road(20)"
+      width 6
+      locked FALSE
+    }
+    DEF Bryce_Road_22 Road {
+      translation -281.91 -124.05 0.01
+      rotation 0 0 -1 -5.307179586466759e-06
+      name "road(19)"
+      width 6
+      wayPoints [
+        0 0 0
+        40 0 0
+      ]
+      locked FALSE
+    }
+    DEF Bryce_Road_11 Road {
+      translation -289.83 33.98 0.01
+      rotation 0 0 1 1.5708
+      name "road(18)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      rightBorder FALSE
+      wayPoints [
+        0 0 0
+        6.1 0 0
+      ]
+      locked FALSE
+    }
+    DEF Bryce_Road_10 Road {
+      translation -289.83 -116.04 0.01
+      rotation 0 0 1 1.5708
+      name "road(17)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      wayPoints [
+        0 0 0
+        150 0 0
+      ]
+      locked FALSE
+    }
+    DEF Bryce_Road_9 Road {
+      translation -297.82 -124.02 0.01
+      rotation 0 0 1 -3.1415853071795863
+      name "road(16)"
+      width 6
+      wayPoints [
+        0 0 0
+        104.3 0 0
+      ]
+      locked FALSE
+    }
+    RoadIntersection {
+      translation -289.842 -124.034 0.01
+      rotation 0 0 1 0.785398
+      name "road intersection(2)"
+      roadsWidth 6
+      locked FALSE
+    }
+    DEF Bryce_Road_8 Road {
+      translation -289.85 -282.01 0.01
+      rotation 0 0 1 1.5708
+      name "road(15)"
+      width 6
+      wayPoints [
+        0 0 0
+        150 0 0
+      ]
+      locked FALSE
+    }
+    DEF Bryce_Dr_7 Road {
+      translation -289.85 -298 0.01
+      rotation 0 0 1 -1.5707953071795862
+      name "road(14)"
+      width 6
+      wayPoints [
+        0 0 0
+        104 0 0
+      ]
+      locked FALSE
+    }
+    CurvedRoadSegment {
+      translation -336.172 -289.766 0.01
+      rotation 0 0 -1 1.82
+      name "road(13)"
+      totalAngle 5.8
+      locked FALSE
+    }
+    CurvedRoadSegment {
+      translation -336.172 -289.766 0.01
+      rotation 0 0 1 -1.22
+      name "road(12)"
+      leftBorder FALSE
+      totalAngle 0.6
+      locked FALSE
+    }
+    DEF Bryce_Dr_6 Road {
+      translation -297.84 -290 0.01
+      rotation 0 0 1 3.14159
+      name "road(11)"
+      width 6
+      wayPoints [
+        0 0 0
+        25.2 0 0
+      ]
+      locked FALSE
+    }
+    Group {
+      children [
+        StopSign {
+          translation -294.08 -294.22 0
+          rotation 0 0 1 3.14159
+          name "stop sign(3)"
+        }
+        StopSign {
+          translation -285.67 -294.22 0
+          rotation 0 0 1 -1.5707953071795862
+          name "stop sign(3)"
+        }
+        StopSign {
+          translation -294.17 -285.72 0
+          rotation 0 0 1 1.5708
+          name "stop sign(1)"
+        }
+        StopSign {
+          translation -285.47 -285.72 0
+        }
+      ]
+    }
+    RoadIntersection {
+      translation -289.842 -290.002 0.01
+      rotation 0 0 1 0.785398
+      roadsWidth 6
+      locked FALSE
+    }
+    DEF Bryce_Dr_5 Road {
+      translation -211.89 -290 0.01
+      rotation 0 0 1 3.14159
+      name "road(10)"
+      width 6
+      wayPoints [
+        0 0 0
+        70 0 0
+      ]
+      locked FALSE
+    }
+    DEF Bryce_Dr_4 Road {
+      translation -211.89 -290 0.01
+      name "road(9)"
+      width 6
+      leftBorder FALSE
+      wayPoints [
+        0 0 0
+        7 0 0
+      ]
+      locked FALSE
+    }
+    DEF Bryce_Dr_3 Road {
+      translation -204.9 -290 0.01
+      name "road(8)"
+      width 6
+      wayPoints [
+        0 0 0
+        250 0 0
+      ]
+      locked FALSE
+    }
+    DEF Bryce_Road_2 Road {
+      translation 53.06 -282 0.01
+      rotation 0 0 1 1.5708
+      name "road(5)"
+      width 6
+      wayPoints [
+        0 0 0
+        80 0 0
+      ]
+      locked FALSE
+    }
+    DEF Stop_Signs Group {
+      children [
+        StopSign {
+          translation 48.35 -294.42 0
+          rotation 0 0 1 3.14159
+          name "stop sign(2)"
+        }
+        StopSign {
+          translation 57.59 -294.34 0
+          rotation 0 0 1 -1.5707953071795862
+          name "stop sign(2)"
+        }
+        StopSign {
+          translation 48.35 -285.41 0
+          rotation 0 0 1 1.5708
+          name "stop sign(3)"
+        }
+        StopSign {
+          translation 57.83 -285.62 0
+          name "stop sign(3)"
+        }
+      ]
+    }
+    RoadIntersection {
+      translation 53.0614 -290 0.01
+      rotation 0 0 1 -0.785395307179586
+      name "road intersection(1)"
+      roadsWidth 6
+      locked FALSE
+    }
+    DEF Bryce_Dr_1 Road {
+      translation 61.01 -290 0.01
+      name "road(2)"
+      width 6
+      wayPoints [
+        0 0 0
+        341 0 0
+      ]
+      locked FALSE
+    }
+  ]
+}
+TexturedBackgroundLight {
+}
+DEF Ground RectangleArena {
+  floorSize 804 804
+  floorAppearance Grass {
+    type "mossy"
+  }
+  wallHeight 2
+  wallAppearance GalvanizedMetal {
+  }
+}
+DEF Frat_row Group {
+  children [
+    DEF Frat_ln Road {
+      translation 56.05 -350 0.01
+      name "road(1)"
+      id "1"
+      width 3
+      numberOfLanes 1
+      wayPoints [
+        0 0 0
+        345.97 0 0
+      ]
+      locked FALSE
+    }
+  ]
+}
+DEF Campus_E_Dr Group {
+  children [
+    CurvedRoadSegment {
+      translation -2.15352 193.537 0.01
+      rotation 0 0 1 0.261796
+      name "road(52)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      locked FALSE
+    }
+    Road {
+      translation -33.7022 195.438 0.01
+      rotation 0 0 -1 -0.2618053071795865
+      name "road(51)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      wayPoints [
+        0 0 0
+        30 0 0
+      ]
+      locked FALSE
+    }
+    Road {
+      translation -16.6988 120.449 0.01
+      rotation 0 0 1 1.8326
+      name "road(50)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      wayPoints [
+        0 0 0
+        73.8 0 0
+      ]
+      locked FALSE
+    }
+    Road {
+      translation -35.7815 191.644 0.01
+      rotation 0 0 1 1.8326
+      name "road(49)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      rightBorder FALSE
+      wayPoints [
+        0 0 0
+        6.3 0 0
+      ]
+      locked FALSE
+    }
+    Road {
+      translation 23.0196 138.273 0.01
+      rotation 0 0 1 1.8326
+      name "road(48)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      wayPoints [
+        0 0 0
+        59.9 0 0
+      ]
+      locked FALSE
+    }
+    CurvedRoadSegment {
+      translation 13.3471 135.693 0.01
+      rotation 0 0 -1 1.309
+      name "road(47)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      locked FALSE
+    }
+    Road {
+      translation -13.0297 118.267 0.01
+      rotation 0 0 -1 -0.2618053071795865
+      name "road(46)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      wayPoints [
+        0 0 0
+        30 0 0
+      ]
+      locked FALSE
+    }
+    Road {
+      translation -37.4102 197.725 0.01
+      rotation 0 0 1 1.8326
+      name "road(41)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      wayPoints [
+        0 0 0
+        177.03 0 0
+      ]
+      locked FALSE
+    }
+    Road {
+      translation -15.0845 114.396 0.01
+      rotation 0 0 1 1.8326
+      name "road(40)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      rightBorder FALSE
+      wayPoints [
+        0 0 0
+        6.3 0 0
+      ]
+      locked FALSE
+    }
+    Road {
+      translation 36.6749 -78.7785 0.01
+      rotation 0 0 1 1.8326
+      name "road(7)"
+      width 6
+      wayPoints [
+        0 0 0
+        200 0 0
+      ]
+      locked FALSE
+    }
+    CurvedRoadSegment {
+      translation -426.96 -203 0.01
+      rotation 0 0 1 -1.3089953071795861
+      name "road(6)"
+      width 6
+      curvatureRadius 480
+      totalAngle 0.26
+      locked FALSE
+    }
+    Road {
+      translation 53.062 -348.23 0.01
+      rotation 0 0 1 1.5708
+      name "road(4)"
+      width 6
+      wayPoints [
+        0 0 0
+        50.3 0 0
+      ]
+      locked FALSE
+    }
+    DEF int Road {
+      translation 53.062 -351.71 0.01
+      rotation 0 0 1 1.5708
+      name "road(3)"
+      width 6
+      rightBorder FALSE
+      wayPoints [
+        0 0 0
+        3.5 0 0
+      ]
+      locked FALSE
+    }
+    CurvedRoadSegment {
+      translation -36.94 -351.699 0.01
+      rotation 0 0 -1 1.5708
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      curvatureRadius 90
+      totalAngle 0.63
+      locked FALSE
+    }
+  ]
+}
+DEF Peter_Bryce Group {
+  children [
+    Solid {
+      translation 74.6917 298.756 14.91
+      rotation 0 0 1 0.261799
+      children [
+        Shape {
+          appearance Marble {
+          }
+          geometry Box {
+            size 100 59 1
+          }
+        }
+      ]
+      name "solid(13)"
+    }
+    Solid {
+      translation 74.6917 298.756 7.08
+      rotation 0 0 1 0.261799
+      children [
+        Shape {
+          appearance RedBricks {
+          }
+          geometry Box {
+            size 100 59 15
+          }
+        }
+      ]
+    }
+    DEF Bryce_Road_22 Road {
+      translation -78.9199 374.879 0.01
+      rotation 0 0 1 0.1309053061004253
+      name "road(45)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      wayPoints [
+        0 0 0
+        198.5 0 0
+      ]
+      locked FALSE
+    }
+    DEF Bryce_Road_22 Road {
+      translation -79.257 385.028 0.01
+      rotation 0 0 1 0.1309053061004253
+      name "road(44)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      wayPoints [
+        0 0 0
+        155 0 0
+      ]
+      locked FALSE
+    }
+    DEF Bryce_Road_22 Road {
+      translation -85.9491 390.172 0.01
+      rotation 0 0 1 1.7017
+      name "road(43)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      wayPoints [
+        0 0 0
+        12.3 0 0
+      ]
+      locked FALSE
+    }
+    RoadIntersection {
+      translation -85.1831 384.248 0.01
+      rotation 0 0 1 -2.2253003061004253
+      name "road intersection(6)"
+      roadsWidth 6
+      startRoadsLength [
+        3
+      ]
+      startRoadBorderWidth 0.3
+      locked FALSE
+    }
+    RoadIntersection {
+      translation -83.8829 374.235 0.01
+      rotation 0 0 1 -2.2253003061004253
+      name "road intersection(5)"
+      roadsWidth 6
+      startRoadsLength [
+        2
+      ]
+      startRoadBorderWidth 0.3
+      locked FALSE
+    }
+    CurvedRoadSegment {
+      translation -73.3392 370.598 0.01
+      rotation 0 0 -1 -1.82
+      name "road(42)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      totalAngle 0.12
+      locked FALSE
+    }
+    Wall {
+      translation -292.531 361.5 0
+      rotation 0 0 1 0.13
+      size 7 3 0.16
+      appearance Pavement {
+      }
+    }
+    DEF Bryce_Road_22 Road {
+      translation -285.902 357.822 0.01
+      rotation 0 0 1 0.1309053061004253
+      name "road(39)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      wayPoints [
+        0 0 0
+        196.5 0 0
+      ]
+      locked FALSE
+    }
+    DEF Bryce_Road_22 Road {
+      translation -285.576 347.674 0.01
+      rotation 0 0 1 0.1309053061004253
+      name "road(38)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      wayPoints [
+        0 0 0
+        198.5 0 0
+      ]
+      locked FALSE
+    }
+    CurvedRoadSegment {
+      translation -299.78 340.658 0.01
+      rotation 0 0 1 -1.42
+      name "road(37)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      totalAngle 0.12
+      locked FALSE
+    }
+    RoadIntersection {
+      translation -291.822 357.06 0.01
+      rotation 0 0 1 -2.2253003061004253
+      name "road intersection(4)"
+      roadsWidth 6
+      startRoadsLength [
+        3
+      ]
+      startRoadBorderWidth 0.3
+      locked FALSE
+    }
+    RoadIntersection {
+      translation -290.502 347.009 0.01
+      rotation 0 0 1 -2.2253003061004253
+      name "road intersection(3)"
+      roadsWidth 6
+      startRoadsLength [
+        2
+      ]
+      startRoadBorderWidth 0.3
+      locked FALSE
+    }
+    DEF Bryce_Road_22 Road {
+      translation -356.594 348.523 0.01
+      rotation 0 0 1 0.1309053061004253
+      name "road(35)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      wayPoints [
+        0 0 0
+        59.5 0 0
+      ]
+      locked FALSE
+    }
+    DEF Bryce_Road_22 Road {
+      translation -354.756 338.569 0.01
+      rotation 0 0 1 0.1309053061004253
+      name "road(32)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      wayPoints [
+        0 0 0
+        60 0 0
+      ]
+      locked FALSE
+    }
+    CurvedRoadSegment {
+      translation -342.511 259.625 0.01
+      rotation 0 0 1 0.785395
+      name "road(34)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      curvatureRadius 90
+      totalAngle 0.63
+      locked FALSE
+    }
+    CurvedRoadSegment {
+      translation -340.748 249.654 0.01
+      rotation 0 0 1 0.785395
+      name "road(33)"
+      width 6
+      roadBorderWidth [
+        0.3
+      ]
+      curvatureRadius 90
+      totalAngle 0.63
+      locked FALSE
+    }
+  ]
+}
+Group {
+  children [
+    ModernSuburbanHouse {
+      translation 141.345 -240.793 0
+      rotation 0 0 -1 0.523598
+      name "suburban house(20)"
+    }
+    Solid {
+      translation -18.76 -262.14 0
+      children [
+        SimpleTree {
+          type "oak tree"
+          height 10
+          enableBoundingObject FALSE
+        }
+      ]
+      name "solid(21)"
+    }
+    Solid {
+      translation -0.61 -197.89 0
+      children [
+        SimpleTree {
+          type "oak tree"
+          height 10
+          enableBoundingObject FALSE
+        }
+      ]
+      name "solid(20)"
+    }
+    Solid {
+      translation -31.7 -207.83 0
+      children [
+        SimpleTree {
+          type "oak tree"
+          height 10
+          enableBoundingObject FALSE
+        }
+      ]
+      name "solid(19)"
+    }
+    Bench {
+      translation -164.68 -283.08 0
+      rotation 0 0 1 -1.5707953071795862
+    }
+    ComposedHouse {
+      translation -184.24 -275.23 0
+      rotation 0 0 1 -1.5707953071795862
+      name "composed house(4)"
+    }
+    DEF Parking_Lot Solid {
+      translation 70.5212 -74.5673 0.1
+      rotation 0 0 1 -2.8797953071795863
+      children [
+        Shape {
+          appearance FormedConcrete {
+          }
+          geometry Box {
+            size 20 24 0.1
+          }
+        }
+      ]
+      name "solid(18)"
+    }
+    SimpleBuilding {
+      translation 71.3399 -77.1785 0
+      rotation 0 0 1 0.261799
+    }
+    DEF Parking_Lot Solid {
+      translation 52.025 -82.6191 0.1
+      rotation 0 0 1 -2.8797953071795863
+      children [
+        Shape {
+          appearance FormedConcrete {
+          }
+          geometry Box {
+            size 20 30 0.1
+          }
+        }
+      ]
+      name "solid(17)"
+    }
+    DEF Parking_Lot Solid {
+      translation 69.3646 -46.8735 0.1
+      rotation 0 0 1 -2.8797953071795863
+      children [
+        Shape {
+          appearance Asphalt {
+          }
+          geometry Box {
+            size 72 30 0.1
+          }
+        }
+      ]
+      name "solid(16)"
+    }
+    DEF Parking_Lot Solid {
+      translation 20.2408 233.479 0.1
+      rotation 0 0 1 -2.094395307179586
+      children [
+        Shape {
+          geometry Box {
+            size 65 5 0.1
+          }
+        }
+      ]
+      name "solid(12)"
+    }
+    SmallResidentialBuilding {
+      translation -19.8398 215.705 0
+      rotation 0 0 1 -2.8797953071795863
+    }
+    PedestrianCrossing {
+      translation -85.5573 388.125 -0.18
+      rotation 0 0 1 0.1308993061004253
+      name "pedestrian crossing(1)"
+      size 7 2
+      enableBoundingObject FALSE
+    }
+    PedestrianCrossing {
+      translation -83.2198 370.352 -0.18
+      rotation 0 0 1 0.1308993061004253
+      size 7 2
+      enableBoundingObject FALSE
+    }
+    CrossRoadsTrafficLight {
+      translation -86.697 379.212 0
+      rotation 0 0 1 -3.05
+    }
+    ControlledStreetLight {
+      translation -143.58 383.36 0
+      rotation 0 0 1 -1.5707953071795862
+    }
+  ]
+}

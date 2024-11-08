@@ -1,0 +1,46 @@
+[0.428s] Invoking command in '/home/jstock1/Project2/webots_ros2_homework1_python': PYTHONPATH=/home/jstock1/Project2/webots_ros2_homework1_python/build/webots_ros2_homework1_python/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jstock1/Project2/webots_ros2_homework1_python/install/webots_ros2_homework1_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/webots_ros2_homework1_python build --build-base /home/jstock1/Project2/webots_ros2_homework1_python/build/webots_ros2_homework1_python/build install --record /home/jstock1/Project2/webots_ros2_homework1_python/build/webots_ros2_homework1_python/install.log --single-version-externally-managed install_data
+[0.584s] running egg_info
+[0.584s] creating build/webots_ros2_homework1_python/webots_ros2_homework1_python.egg-info
+[0.584s] writing build/webots_ros2_homework1_python/webots_ros2_homework1_python.egg-info/PKG-INFO
+[0.585s] writing dependency_links to build/webots_ros2_homework1_python/webots_ros2_homework1_python.egg-info/dependency_links.txt
+[0.585s] writing entry points to build/webots_ros2_homework1_python/webots_ros2_homework1_python.egg-info/entry_points.txt
+[0.585s] writing requirements to build/webots_ros2_homework1_python/webots_ros2_homework1_python.egg-info/requires.txt
+[0.585s] writing top-level names to build/webots_ros2_homework1_python/webots_ros2_homework1_python.egg-info/top_level.txt
+[0.585s] writing manifest file 'build/webots_ros2_homework1_python/webots_ros2_homework1_python.egg-info/SOURCES.txt'
+[0.586s] reading manifest file 'build/webots_ros2_homework1_python/webots_ros2_homework1_python.egg-info/SOURCES.txt'
+[0.587s] writing manifest file 'build/webots_ros2_homework1_python/webots_ros2_homework1_python.egg-info/SOURCES.txt'
+[0.587s] running build
+[0.587s] running build_py
+[0.587s] creating /home/jstock1/Project2/webots_ros2_homework1_python/build/webots_ros2_homework1_python/build
+[0.587s] creating /home/jstock1/Project2/webots_ros2_homework1_python/build/webots_ros2_homework1_python/build/lib
+[0.587s] creating /home/jstock1/Project2/webots_ros2_homework1_python/build/webots_ros2_homework1_python/build/lib/webots_ros2_homework1_python
+[0.588s] copying webots_ros2_homework1_python/__init__.py -> /home/jstock1/Project2/webots_ros2_homework1_python/build/webots_ros2_homework1_python/build/lib/webots_ros2_homework1_python
+[0.588s] copying webots_ros2_homework1_python/webots_ros2_homework1_python.py -> /home/jstock1/Project2/webots_ros2_homework1_python/build/webots_ros2_homework1_python/build/lib/webots_ros2_homework1_python
+[0.588s] running install
+[0.588s] running install_lib
+[0.588s] creating /home/jstock1/Project2/webots_ros2_homework1_python/install/webots_ros2_homework1_python/lib/python3.10/site-packages/webots_ros2_homework1_python
+[0.589s] copying /home/jstock1/Project2/webots_ros2_homework1_python/build/webots_ros2_homework1_python/build/lib/webots_ros2_homework1_python/__init__.py -> /home/jstock1/Project2/webots_ros2_homework1_python/install/webots_ros2_homework1_python/lib/python3.10/site-packages/webots_ros2_homework1_python
+[0.589s] copying /home/jstock1/Project2/webots_ros2_homework1_python/build/webots_ros2_homework1_python/build/lib/webots_ros2_homework1_python/webots_ros2_homework1_python.py -> /home/jstock1/Project2/webots_ros2_homework1_python/install/webots_ros2_homework1_python/lib/python3.10/site-packages/webots_ros2_homework1_python
+[0.589s] byte-compiling /home/jstock1/Project2/webots_ros2_homework1_python/install/webots_ros2_homework1_python/lib/python3.10/site-packages/webots_ros2_homework1_python/__init__.py to __init__.cpython-310.pyc
+[0.590s] byte-compiling /home/jstock1/Project2/webots_ros2_homework1_python/install/webots_ros2_homework1_python/lib/python3.10/site-packages/webots_ros2_homework1_python/webots_ros2_homework1_python.py to webots_ros2_homework1_python.cpython-310.pyc
+[0.590s] running install_data
+[0.591s] creating /home/jstock1/Project2/webots_ros2_homework1_python/install/webots_ros2_homework1_python/share/ament_index
+[0.591s] creating /home/jstock1/Project2/webots_ros2_homework1_python/install/webots_ros2_homework1_python/share/ament_index/resource_index
+[0.591s] creating /home/jstock1/Project2/webots_ros2_homework1_python/install/webots_ros2_homework1_python/share/ament_index/resource_index/packages
+[0.591s] copying resource/webots_ros2_homework1_python -> /home/jstock1/Project2/webots_ros2_homework1_python/install/webots_ros2_homework1_python/share/ament_index/resource_index/packages
+[0.591s] creating /home/jstock1/Project2/webots_ros2_homework1_python/install/webots_ros2_homework1_python/share/webots_ros2_homework1_python/launch
+[0.591s] copying launch/f23_robotics_1_launch.py -> /home/jstock1/Project2/webots_ros2_homework1_python/install/webots_ros2_homework1_python/share/webots_ros2_homework1_python/launch
+[0.591s] creating /home/jstock1/Project2/webots_ros2_homework1_python/install/webots_ros2_homework1_python/share/webots_ros2_homework1_python/worlds
+[0.592s] copying worlds/f23_robotics_1.wbt -> /home/jstock1/Project2/webots_ros2_homework1_python/install/webots_ros2_homework1_python/share/webots_ros2_homework1_python/worlds
+[0.592s] copying worlds/Greek_Assembly_Hall_Final.wbt -> /home/jstock1/Project2/webots_ros2_homework1_python/install/webots_ros2_homework1_python/share/webots_ros2_homework1_python/worlds
+[0.592s] copying worlds/Simulation_Part2.wbt -> /home/jstock1/Project2/webots_ros2_homework1_python/install/webots_ros2_homework1_python/share/webots_ros2_homework1_python/worlds
+[0.592s] copying package.xml -> /home/jstock1/Project2/webots_ros2_homework1_python/install/webots_ros2_homework1_python/share/webots_ros2_homework1_python
+[0.592s] creating /home/jstock1/Project2/webots_ros2_homework1_python/install/webots_ros2_homework1_python/share/webots_ros2_homework1_python/resource
+[0.592s] copying resource/turtlebot_webots.urdf -> /home/jstock1/Project2/webots_ros2_homework1_python/install/webots_ros2_homework1_python/share/webots_ros2_homework1_python/resource
+[0.592s] copying resource/ros2control.yml -> /home/jstock1/Project2/webots_ros2_homework1_python/install/webots_ros2_homework1_python/share/webots_ros2_homework1_python/resource
+[0.592s] running install_egg_info
+[0.593s] Copying build/webots_ros2_homework1_python/webots_ros2_homework1_python.egg-info to /home/jstock1/Project2/webots_ros2_homework1_python/install/webots_ros2_homework1_python/lib/python3.10/site-packages/webots_ros2_homework1_python-0.0.0-py3.10.egg-info
+[0.594s] running install_scripts
+[0.609s] Installing webots_ros2_homework1_python script to /home/jstock1/Project2/webots_ros2_homework1_python/install/webots_ros2_homework1_python/lib/webots_ros2_homework1_python
+[0.610s] writing list of installed files to '/home/jstock1/Project2/webots_ros2_homework1_python/build/webots_ros2_homework1_python/install.log'
+[0.626s] Invoked command in '/home/jstock1/Project2/webots_ros2_homework1_python' returned '0': PYTHONPATH=/home/jstock1/Project2/webots_ros2_homework1_python/build/webots_ros2_homework1_python/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jstock1/Project2/webots_ros2_homework1_python/install/webots_ros2_homework1_python/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/webots_ros2_homework1_python build --build-base /home/jstock1/Project2/webots_ros2_homework1_python/build/webots_ros2_homework1_python/build install --record /home/jstock1/Project2/webots_ros2_homework1_python/build/webots_ros2_homework1_python/install.log --single-version-externally-managed install_data
